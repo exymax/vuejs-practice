@@ -1,0 +1,35 @@
+.flex-default {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flex-arrange-beautiful {
+    justify-content: space-between;
+    align-content: center;
+}
+
+.fixed-element {
+    position: fixed;
+    width: 100%;
+}
+
+#app {
+    .awesome-app-header {
+        .fixed-element;
+        .flex-default;
+        .flex-arrange-beautiful;
+    }
+
+    .awesome-app-gallery {
+        .flex-default;
+    }
+
+    .awesome-app-footer {
+        .fixed-element;
+        bottom: 0;
+        .flex-default;
+        .flex-arrange-beautiful;
+    }
+}
+
